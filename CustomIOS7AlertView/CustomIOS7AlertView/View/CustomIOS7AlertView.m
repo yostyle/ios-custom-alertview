@@ -26,7 +26,7 @@ CGFloat buttonSpacerHeight = 0;
 @synthesize delegate;
 @synthesize buttonTitles;
 @synthesize useMotionEffects;
-@synthesize buttonBackgroundColor,buttonTextColor;
+//@synthesize buttonBackgroundColor,buttonTextColor;
 
 - (id)initWithParentView: (UIView *)_parentView
 {
@@ -240,10 +240,10 @@ CGFloat buttonSpacerHeight = 0;
         [closeButton setTag:i];
         
         [closeButton setTitle:[buttonTitles objectAtIndex:i] forState:UIControlStateNormal];
-        [closeButton setTitleColor:buttonTextColor forState:UIControlStateNormal];
+//        [closeButton setTitleColor:buttonTextColor forState:UIControlStateNormal];
         [closeButton setTitleColor:[UIColor colorWithRed:0.2f green:0.2f blue:0.2f alpha:0.5f] forState:UIControlStateHighlighted];
         [closeButton.titleLabel setFont:[UIFont boldSystemFontOfSize:14.0f]];
-        [closeButton setBackgroundColor:buttonBackgroundColor];
+//        [closeButton setBackgroundColor:buttonBackgroundColor];
         [closeButton.layer setCornerRadius:kCustomIOS7AlertViewCornerRadius];
         
         [container addSubview:closeButton];
